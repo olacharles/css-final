@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio - Charles Ephraim Ola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .polaroid-card {
+            width: 600px;
+            margin: 40px;
+            padding: 0px;
+            background-color: #96919160;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s; 
+        }
+
+        .polaroid-card img {
+            width: 100%;
+            height: 90%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .polaroid-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .polaroid-card p {
+            margin: 10px 0;
+        }
+
+        
+        .polaroid-card:hover {
+            transform: scale(1.05); 
+        }
+
+        
+@media (max-width: 768px) {
+    /* Media query for tablet */
+    .navbar {
+        padding: 15px 0;
+        width: 100%;
+        height: 70%;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Media query for phone */
+    .navbar {
+        padding: 10px 0;
+        height: 90px;
+    }
+
+    .navbar ul li {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .Logo {
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .polaroid-card {
+        width: 70%;
+        height: 90%;
+    }
+    
+
+    footer {
+        margin-bottom: -160vh;
+        height: 50px;
+    }
+    
+    footer p {
+        font-size: 30px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="banner">
+            <div class="navbar">
+                <a href="index.html"> 
+                    <img src="images/logo.png" class="Logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="portfolio-container">
+        <div class="polaroid-card">
+            <img src="images/purple-guy.jpg" alt="purple-illustration">
+            <h3>Digital</h3>
+            <p>Male Illustration.</p>
+        </div>
+
+        <div class="polaroid-card">
+            <img src="images/train-scene.jpg" alt="train-scene">
+            <h3>Digital</h3>
+            <p>train-scene.</p>
+        </div>
+
+        <div class="polaroid-card">
+            <img src="forest-scene.jpg" alt="forest-scene">
+            <h3>Digital</h3>
+            <p>forest-scene.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Charles Ephraim Ola's</p>
+    </footer>
+</body>
+</html>
