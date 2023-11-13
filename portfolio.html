@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
     <style>
-        .portfolio-container {
+      .portfolio-container {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
             align-items: center;
             text-align: center;
             padding: 20px;
@@ -15,6 +16,7 @@
 
         .polaroid-card {
             width: 600px;
+            height: 900px;
             margin: 40px;
             padding: 0px;
             background-color: #96919160;
@@ -45,6 +47,14 @@
             transform: scale(1.05); 
         }
 
+        footer {
+        margin-bottom: -800vh;
+        height: 50px;
+    }
+    
+    footer p {
+        font-size: 30px;
+    }
         
 @media (max-width: 768px) {
     /* Media query for tablet */
@@ -77,10 +87,9 @@
     }
 
     .polaroid-card {
-        width: 70%;
-        height: 90%;
-    }
-    
+                width: calc(50% - 40px); /* 50% for 2 cards per row */
+                height: 60%;
+            }
 
     footer {
         margin-bottom: -160vh;
@@ -128,6 +137,27 @@
             <h3>Digital</h3>
             <p>forest-scene.</p>
         </div>
+
+        <div class="polaroid-card">
+            <img src="images/cloudy.jpg" alt="purple-illustration">
+            <h3>Digital</h3>
+            <p>cloudy.</p>
+        </div>
+
+
+        <div class="polaroid-card">
+            <img src="images/girl-alone.jpg" alt="purple-illustration">
+            <h3>Digital</h3>
+            <p>Girl Alone.</p>
+        </div>
+
+
+        <div class="polaroid-card">
+            <img src="images/rock.jpg" alt="purple-illustration">
+            <h3>Digital</h3>
+            <p>Rock.</p>
+        </div>
+
     </div>
     <footer>
         <p>&copy; 2023 Charles Ephraim Ola's</p>
